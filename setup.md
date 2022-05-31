@@ -66,7 +66,8 @@ For getting the template, and keeping track of the changes, we will use a tool c
 - Tell your local repository to push to the new project in Github:
 
 	```
-	git remote rename origin old-origin git remote add origin git@github.com:username/your-repo-name.git
+	git remote rename origin old-origin
+	git remote add origin git@github.com:username/your-repo-name.git
 	```
 
 - Do some edits and then add-commit-push (like this for the first commit):
