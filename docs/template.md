@@ -1,4 +1,4 @@
-# Intro template
+# Template
 
 This intro page is for you to showcase your project. Here are some _bullet points_ to help you get started:
 
