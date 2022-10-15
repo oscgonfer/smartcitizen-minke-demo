@@ -2,9 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: docs/intro
 chapters:
-- file: intro_template
-- file: setup
-- file: example
-- file: publication
+- file: docs/template
+- file: docs/setup
+- file: docs/notebook
+- file: docs/publication
