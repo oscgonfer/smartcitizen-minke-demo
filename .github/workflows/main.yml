@@ -21,7 +21,7 @@ jobs:
         python3 -m pip install --upgrade pip
         python3 -m pip install -r requirements.txt
 
-    - name: mkdocs build
+    - name: jupyter-book build
       run: |
         pip freeze
         pip --version
