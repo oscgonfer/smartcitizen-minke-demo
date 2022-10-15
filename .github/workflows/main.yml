@@ -13,24 +13,23 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v1
       with:
-        python-version: '3.9'
+        python-version: '3.8'
         architecture: 'x64'
 
     - name: Install dependencies
       run: |
-        python3 -m pip install --upgrade pip
-        python3 -m pip install -r requirements.txt
+        pip install -r requirements.txt
 
-    - name: jupyter-book build
+    - name: Build the book
       run: |
         pip freeze
         pip --version
         python --version
         jupyter-book build .
 
-    - name: Deploy if master
+    - name: Deploy
       if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_build/html
