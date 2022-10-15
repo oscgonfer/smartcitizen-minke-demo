@@ -92,7 +92,7 @@ For further changes, your workflow should be:
 Once you are done with this, let's get started with some examples!
 ```
 
-### Accounts and automatic deployment
+## Accounts and automatic deployment
 
 This page is hosted using [Github Pages](https://github.com/pages). We have chosen this for convenience, but it's not compulsory to do so. If you want to host the project results in Github too, you would need an account there, and create a fork of the [demo project](https://github.com/fablabbcn/smartcitizen-minke-template). However, you can take the html generated from `jupyter-book` and put it somewhere else. The only thing we ask for is to have the project page findable and linked in the [MINKE Projects Documentation](https://participatory-tech.docs.minke.eu/Projects/).
 
@@ -100,4 +100,4 @@ This page is hosted using [Github Pages](https://github.com/pages). We have chos
 In case you want to not to worry about having the publication of your content, you can use `ghp-import`. You can follow these steps for doing so: https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#option-2-automatically-push-your-build-files-with-ghp-import
 ```
 
-Other options are available too for publishing your work. See [this page](https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#github-pages-and-actions) for all the options. **If you don't know what you are doing yet, go little by little and get to know the environment first.**
+Other options are available too for publishing your work. See [this page](https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#github-pages-and-actions) for all the options.**If you don't know what you are doing yet, go little by little and get to know the environment first.**
