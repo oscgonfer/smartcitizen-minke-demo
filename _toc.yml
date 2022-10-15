@@ -4,7 +4,7 @@
 format: jb-book
 root: docs/intro
 chapters:
-- file: docs/template
+- file: docs/project
 - file: docs/setup
 - file: docs/notebook
 - file: docs/publication
