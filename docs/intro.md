@@ -20,7 +20,7 @@ Ideally, you would use this template to document:
 
 All this, using open tools, keeping track of where data is, and hopefully, in the future, your project will inspire others. To summarize:
 
-- Project details will be in a website like what you are seeing, following the [intro template](template)
+- Project details will be in a website like what you are seeing, following the [project template](project)
 - Code and analysis is posted on a (by default) Github repository, forked from the [MINKE Template](https://github.com/fablabbcn/smartcitizen-minke-template). Follow the [setup](setup) guide and the [jupyter example](notebook)
 - Data will be hosted in Zenodo, after using the [scdata zenodo example](https://docs.smartcitizen.me/Guides/data/Upload%20data%20to%20zenodo/)
 - Projects will be linked in [the index](https://participatory-tech.docs.minke.eu/Projects/)

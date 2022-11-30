@@ -12,19 +12,33 @@ If you have followed the steps in the [setup guide](setup.html#getting-the-templ
 
 The easiest and recommended workflow is:
 
+
 - Make changes on your files, locally. You use `python` or `R` for this in `jupyter lab`
 - Track the changes in your repository with `git`. Upload it to the online repository when needed with `git push`
+- This will trigger `github-actions` on your repo and deploy everything
+
+### Option 2
+
+This is a bit more complicated and requires you to know a bit better what you do.
+
 - Build the book (website) with:
 	```
 	jupyter-book build .
 	```
 - You can make sure that everything runs well by checking your files locally
-- Make the website all available with:
+- Track the changes in your repository with `git`. Upload it to the online repository when needed with `git push`
+- Build and send the website with:
 	```
 	ghp-import -n -p -f _build/html
 	```
 
 Now good to push the data!
+
+```{tip}
+In case you want to not to worry about the publication of your content, you can use `ghp-import`. You can follow these steps for doing so: https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#option-2-automatically-push-your-build-files-with-ghp-import
+```
+
+Other options are available too for publishing your work. See [this page](https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#github-pages-and-actions) for all the options.**If you don't know what you are doing yet, go little by little and get to know the environment first.**
 
 **Note:**
 There is an extra `Makefile` in the repo. If you want to build it:
@@ -39,14 +53,6 @@ And if you want to release it:
 make release
 ```
 
-### Option 2
-
-Another option is to simply use `github-actions` on your repo. An example has been added to the template repostory, but it may not always work as desired, in particular the notebook automatic build.
-
-This option simply requires for you to push the content.
-
 ## Making data available
 
 Not only your project needs to be documented and the data processing code available, but also the data from it. For this, we will use [scdata](https://pypi.org/project/scdata) and upload it automatically to Zenodo online platform. You can check this [guide](https://docs.smartcitizen.me/Guides/data/Upload%20data%20to%20zenodo/) for better guidance. Remember to finalize the upload in your profile and to **add the DOI in your website!**
-
-

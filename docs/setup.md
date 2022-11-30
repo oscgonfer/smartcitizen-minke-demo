@@ -44,7 +44,34 @@ pip install jupyter-book
 
 ## Getting the template
 
-For getting the template, and keeping track of the changes, we will use a tool called `git`. `git` is a _distributed version control system_ or _dcvs_ for short, and it's used in software development broadly. We believe this practice is suitable for data analysis and for sharing traceable environmental sensing projects. You can set up git in any platform after reading this [guide](https://fablabbcn-projects.gitlab.io/learning/fabacademy-local-docs/guides/code/gitsetup/). Once you have to make your folder and structure, you can clone / fork this template by following these steps:
+For getting the template, and keeping track of the changes, we will use a tool called `git`. `git` is a _distributed version control system_ or _dcvs_ for short, and it's used in software development broadly. We believe this practice is suitable for data analysis and for sharing traceable environmental sensing projects. You can set up git in any platform after reading this [guide](https://fablabbcn-projects.gitlab.io/learning/fabacademy-local-docs/guides/code/gitsetup/). Once you have `git`, in order to make your folder and structure, you can clone or fork this template by following the steps below.
+
+### Forking
+
+```{tip}
+
+- Go to the [template project](https://github.com/fablabbcn/smartcitizen-minke-template) and hit **Fork**
+
+	![](assets/fork.png)
+
+- Maybe rename the repository as you better like it
+
+- Clone the template repository (ssh) **make sure you replace the command below**
+
+	```
+	git clone git@github.com:username/your-repo-name.git
+	```
+
+- Do some edits and then add-commit-push:
+
+	```
+	git add FILENAME 
+	git commit -m "My other commit" 
+	git push
+	```
+```
+
+### Cloning
 
 
 ```{tip}    
@@ -92,12 +119,15 @@ For further changes, your workflow should be:
 Once you are done with this, let's get started with some examples!
 ```
 
+### Testing locally
+
+You can test that everything goes well by going to your folder and running:
+
+```
+jupyter-book build .
+```
+
 ## Accounts and automatic deployment
 
 This page is hosted using [Github Pages](https://github.com/pages). We have chosen this for convenience, but it's not compulsory to do so. If you want to host the project results in Github too, you would need an account there, and create a fork of the [demo project](https://github.com/fablabbcn/smartcitizen-minke-template). However, you can take the html generated from `jupyter-book` and put it somewhere else. The only thing we ask for is to have the project page findable and linked in the [MINKE Projects Documentation](https://participatory-tech.docs.minke.eu/Projects/).
 
-```{tip}
-In case you want to not to worry about having the publication of your content, you can use `ghp-import`. You can follow these steps for doing so: https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#option-2-automatically-push-your-build-files-with-ghp-import
-```
-
-Other options are available too for publishing your work. See [this page](https://jupyterbook.org/en/stable/publish/gh-pages.html?highlight=ghp-import#github-pages-and-actions) for all the options.**If you don't know what you are doing yet, go little by little and get to know the environment first.**
