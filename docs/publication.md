@@ -6,7 +6,7 @@ During [MINKE TNA Open Calls](https://minke.eu), you will need to make this cont
 
 ## Making code and data analysis available
 
-If you have followed the steps in the [setup guide](setup.html#getting-the-template), you should be able to make changes to it locally and the push the code using `git` to your online repository. To deploy your website, you can make use of the `ghp-import` as explained in [accounts section of the setup guide](setup.html#accounts).
+If you have followed the steps in the [setup guide](setup.html#getting-the-template), you should be able to make changes to it locally and the push the code using `git` to your online repository. This will automatically trigger a process in github to deploy your website.
 
 ### Option 1
 
