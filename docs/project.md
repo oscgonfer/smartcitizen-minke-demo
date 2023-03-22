@@ -1,3 +1,3 @@
 # Project
 
-My demo project.
+My demo project. So cool!
